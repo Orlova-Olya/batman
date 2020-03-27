@@ -1,0 +1,384 @@
+* {
+  border: none;
+}
+
+body {
+  background-color: #0A090A;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+@media (max-width: 1440px) {
+  body {
+    background-size: auto;
+  }
+}
+.container {
+  margin: auto;
+  max-width: 1140px;
+}
+
+.header {
+  margin-top: 45px;
+  margin-bottom: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+}
+.search-input {
+  flex: 1;
+  padding: 12px 18px;
+  background: rgba(196, 196, 196, 0.5);
+  border-radius: 5px;
+  color: #AEAEAE;
+  font-size: 14px;
+  line-height: 16px;
+}
+.search-button {
+  background-color: transparent;
+  padding: 10px 18px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome */
+  color: #AEAEAE;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #AEAEAE;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #AEAEAE;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  /* Firefox 4 - 18 */
+  color: #AEAEAE;
+  opacity: 1;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+.user-avatar {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main .title {
+  margin: 0;
+  margin-bottom: 7px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+.main .title-en {
+  display: block;
+  margin-bottom: 38px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #787878;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.info a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.info .movie-info {
+  display: flex;
+  align-items: center;
+}
+.info .movie-info .tag {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+.info .movie-info .country {
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 33px;
+}
+.info .movie-info .play::before {
+  content: "";
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.info .more::after {
+  content: "";
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: rotate(90deg);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 3px;
+  color: #000;
+  padding: 3.5% 4.5%;
+}
+
+.short-info {
+  margin-right: 2%;
+}
+.short-info .poster {
+  display: block;
+  margin-top: -45%;
+  margin-bottom: 20px;
+}
+.short-info .button {
+  background: #FF8F27;
+  padding: 10px 44px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+}
+.short-info .actors-title {
+  padding-left: 15px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+.short-info .actors-list {
+  margin: 0;
+  list-style: none;
+  line-height: 150%;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+
+.full-info {
+  flex: 0.97;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.5%;
+}
+
+.tabs-item {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21px;
+}
+.tabs-item-active {
+  color: #FF8F27;
+}
+.tabs-item:not(:last-child) {
+  margin-right: 4%;
+}
+
+.full-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-content {
+  display: none;
+  margin-right: 70px;
+}
+.tabs-content.visible {
+  display: block;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 140%;
+}
+.text:first-of-type {
+  margin-top: 0;
+}
+
+.subscribe-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+.subscribe-form {
+  margin-bottom: 48px;
+  position: relative;
+}
+.subscribe-input {
+  padding: 12px 15px;
+  background: rgba(241, 241, 241, 0.5);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #AEAEAE;
+  font-size: 14px;
+  line-height: 16px;
+}
+.subscribe-button {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #FF8F27;
+  border-radius: 0px 5px 5px 0px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .tabs-item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tabs-item {
+    flex-basis: 20%;
+    line-height: 2;
+  }
+
+  .full-content {
+    flex-wrap: wrap;
+  }
+
+  .tabs-content {
+    margin-bottom: 5%;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .actors-list {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .info > .more {
+    display: none;
+  }
+
+  .tabs {
+    justify-content: space-around;
+  }
+  .tabs-item {
+    flex-basis: 33%;
+  }
+
+  .tabs-content {
+    margin-right: 0;
+  }
+}
+@media (max-width: 578px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+  .header .search {
+    flex-basis: 100%;
+    order: 1;
+    margin-top: 5%;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .short-info {
+    margin-bottom: 5%;
+  }
+
+  .actors-title,
+.actors-list {
+    display: none;
+  }
+
+  .movie-info {
+    flex-wrap: wrap;
+  }
+
+  .play {
+    flex-basis: 100%;
+    margin-top: 10%;
+  }
+
+  .short-info {
+    margin-right: 0;
+  }
+  .short-info .poster {
+    display: inline-block;
+    width: 100%;
+    margin-top: -25%;
+  }
+  .short-info .button {
+    width: 100%;
+  }
+
+  .tabs-item {
+    flex-basis: 100%;
+  }
+}
