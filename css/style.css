@@ -47,8 +47,8 @@ body {
   padding: 12px 18px;
   background: rgba(196, 196, 196, 0.5);
   border-radius: 5px;
-  color: #AEAEAE;
   font-size: 14px;
+  color: #fff;
   line-height: 16px;
 }
 .search-button {
@@ -260,7 +260,7 @@ body {
   background: rgba(241, 241, 241, 0.5);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  color: #AEAEAE;
+  color: #000;
   font-size: 14px;
   line-height: 16px;
 }
