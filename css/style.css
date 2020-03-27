@@ -381,4 +381,7 @@ body {
   .tabs-item {
     flex-basis: 100%;
   }
+  .subscribe{
+    margin: 0 auto;
+  }
 }
