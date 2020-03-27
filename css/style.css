@@ -385,4 +385,7 @@ body {
   .subscribe{
     margin: 0 auto;
   }
+  .bookmark-added{
+    display: none;
+  }
 }
